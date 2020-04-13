@@ -2,6 +2,10 @@
 	include("includes/pizzas.php");
 	include("includes/functions.php");
 ?>
+	
+<?php 
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
