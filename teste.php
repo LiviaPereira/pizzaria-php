@@ -1,11 +1,4 @@
 <?php 
-    include ("includes/functions.php");
-    include ("includes/pizzas.php");
-   
-
-    echo"<pre>";
-    print_r(pizzaPorId(4));
-    echo "</pre>";
    /**
      * Nessa parte você deve incluir os arquivos
      * pizzas.php e o functions php para realizar
@@ -13,4 +6,12 @@
      * functions.php
      */
     
+  include ("includes/functions.php");
+  include ("includes/pizzas.php");
+  
+$pizza = pizzaPorId(10);
+
+echo "<pre>";
+print_r($pizza);
+echo "</pre>";
 ?>

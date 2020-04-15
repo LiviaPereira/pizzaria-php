@@ -1,25 +1,21 @@
 <?php 
     
     /**
-     * Defina uma função que receba o id inteiro e retorne a
-     * pizza quem tem como id este que foi dado
+     * Defina uma função que receba um id númerico e retorne a
+     * pizza que tem como id este que foi dado
      */
     function pizzaPorId($id){
     
-        // trazendo a variavel pessoas do escopo global para o escopo local
+        // trazendo a variavel pizzas do escopo global para o escopo local
         global $pizzas;
-        // Percorrer o array de pessoas para verificar se string ocorre no nome da pessoa
+        // Percorrer o array de pizzas
         foreach($pizzas as $pizza){
-        
-        if($pizza['id'] == $id) {
-
-            // Retornar o resultado
-            return $pizza[] = $pizza;
-
+            if($pizza['id'] == $id) {
+                return $pizza;
+            }
         }
- 
-    }
-
+        
+        return false;
 
     }
 
@@ -28,7 +24,10 @@
      * de destaque. Dica: $vetor[] = 3 adiciona o número 3
      * na última posição de $vetor
      */
-    function pizzasComDestaque(){}
+    function pizzasComDestaque(){
+
+        
+    }
 
      /**
      * Defina uma função que retorne um array com as pizzas
